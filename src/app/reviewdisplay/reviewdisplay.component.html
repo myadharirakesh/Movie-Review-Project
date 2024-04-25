@@ -1,0 +1,36 @@
+<!-- <div class="container">
+    <div class="row">
+       
+            <div class="col-md-2" *ngFor="let p of review">
+                
+            <p>{{p.name}}</p>
+            <p>{{p.review}}</p>
+            <p>{{p.rating}}</p>
+            </div>
+     
+   
+    </div>
+</div>  -->
+<div class="container">
+   <div class="row">
+        <div class="col-md-12">
+             
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Review</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of review">
+                        <td>{{ p.name }}</td>
+                        <td>{{ p.review }}</td>
+                        <td>{{ p.rating }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+   </div>
+</div>

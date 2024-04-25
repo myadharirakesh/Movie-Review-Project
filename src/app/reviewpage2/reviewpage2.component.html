@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+  
+      <div class="row">      
+          <div class="col-md-8 rakhi">
+              <!-- Display selected movie details -->
+              <div class="myp">
+              <h2>{{ movie.movieName }}</h2>
+              <p>Rating: {{ movie.movierating }}</p>
+              
+              <img [src]="movie.movieImage" alt="Movie Image"/>
+              
+              <h4>{{ movie.movieType }}</h4>
+              <h4>About the movie</h4>
+              <p>{{ movie.movieDescription }}</p>
+          </div>  
+          </div>
+           
+        </div>    
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-6  myform">
+        <form action="" (ngSubmit)="addreview1()" (ngSubmit)="onSubmit()" ngNativeValidate>
+          <div class="form-group">
+            <label>Rate this movie</label><br>
+            <label class="form-label">Name</label><br>
+            <input type="text" name="name" class="form-control" [(ngModel)]="name" required><br>
+              <label for="review">Review:</label><br>
+              <input type="text" name="name" class="form-control" [(ngModel)]="review" required>
+                <!-- <textarea type="text" id="review" [(ngModel)]="review" required ></textarea><br> -->
+                <label for="rating">Rating:</label><br>
+            <input type="number" name="rating" id="rating" [(ngModel)]="rating"  required>
+          
+          </div>
+        
+          <div style="margin-top:30px;">
+          <button class="btn btn-primary btn-lg" >Submit</button>
+          <button class="btn btn-danger btn-lg cancel" routerLink="/home/Bollywood">Cancel</button>
+        </div>
+      </form>
+      </div>
+      </div>
+    
+  </div>
+  </div>
+  
+  
+  
+  
+   
+   
+  
+  
+  
+  

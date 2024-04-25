@@ -1,0 +1,195 @@
+
+<div class="container-fluid">
+
+
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row"> 
+                <ng-container *ngFor="let p of movies">
+                <div class="col-md-3" *ngIf="p.movieType1=='telugu'">
+                    <div class="card">
+                        <!-- <div class="card-header"> -->
+                            <img [src]="p.movieImage" class="=card-img-top" height="200" width="250">
+                        <!-- </div> -->
+                        <div class="card-body">
+                            <h4 class="card-text" style="text-decoration:none;" routerLink="/home/review">{{p.movieName}}</h4>
+                            <h5 class="card-text">{{p.movieType}}</h5>
+                            <button class="card-text">{{p.movierating}}</button>
+                        </div>
+                        <div class="card-footer">
+                          <a (click)="addReview(p.movieId)" class="btn btn-primary">Add Review</a>
+                        </div>                   
+                    </div><br><br>
+                </div>
+            </ng-container>
+            </div>
+        </div>
+        
+        <div class="col-md-3 hello">
+            <h4 class="hi">All Time Favourite Movies</h4><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>RRR</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.79</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>KGF1</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.81</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>KGF2</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.82</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Bahubali 1 and 2</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.89</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Salaar</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.41</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Vikramarkudu</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.1</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Thammudu</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.29</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Rangasthalam</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.22</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Pokiri</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.32</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Palasa</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.49</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Goodachari</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.12</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Arjun Reddy</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.59</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Dookudu</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.1</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Dussehra</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.12</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>HIT</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.54</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Ninnukori</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.43</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Temper</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.8</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Majili</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.65</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Adipurush</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.42</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Hanuman</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.44</p>
+                </div>
+            </div><br>
+        </div>
+    </div>
+    </div>
+   
+  
+   

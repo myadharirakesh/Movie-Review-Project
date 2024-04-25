@@ -1,0 +1,39 @@
+
+img:hover
+{
+    transform: scale(1.1);
+}
+.container-fluid{
+    background:#D2E7EE;
+    height:670px;
+}
+@media only screen and (min-width:700px)
+{
+    .myp
+    {
+        margin-left: 190px;
+    }
+    .myform
+    {
+        margin-left:-80px;
+    }
+    img
+    {
+        height:350px;
+       
+    }
+    input
+    {
+        width:250px;
+    }
+    textarea
+    {
+    width:250px;
+    }
+    .myform
+    {
+        margin-top: 80px;
+    }
+   
+
+}

@@ -1,0 +1,19 @@
+
+button{
+    color:white;
+    background-color: green;
+    border-radius: 5px;
+}
+img:hover
+{
+    transform: scale(1.1);
+}
+.hi{
+    color:rgb(13, 255, 0);
+    border-bottom : 3px solid green;
+}
+.hello{
+    border-left: 3px solid black; 
+   color:rgb(225, 10, 143);
+   font-weight:700;
+}

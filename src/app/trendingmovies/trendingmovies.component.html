@@ -1,0 +1,194 @@
+
+<div class="container-fluid">
+
+
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row"> 
+                <ng-container *ngFor="let p of movies">
+                <div class="col-md-3" *ngIf="p.movieType1=='hollywood'">
+                    <div class="card">
+                        <!-- <div class="card-header"> -->
+                            <img [src]="p.movieImage" class="=card-img-top" height="200" width="250">
+                        <!-- </div> -->
+                        <div class="card-body">
+                            <h4 class="card-text" style="text-decoration:none;" routerLink="/home/review1">{{p.movieName}}</h4>
+                            <p class="card-text">{{p.movieType}}</p>
+                            <button class="card-text ">{{p.movierating}}</button>
+                        </div>
+                        <div class="card-footer">
+                          <a (click)="addReview(p.movieId)" class="btn btn-primary">Add Review</a>
+                        </div>                   
+                    </div><br><br>
+                </div>
+            </ng-container>
+            </div>
+        </div>
+        <div class="col-md-3 hello">
+            <h4 class="hi">All Time Favourite Movies</h4><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>The Godfather (1972)</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.76</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>The Shawshank Redemption</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.81</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>The Dark Knight</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.72</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Schindler's List </p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.19</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Forrest Gump </p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.36</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Pulp Fiction</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.1</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>The Matrix </p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.29</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Inception </p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.22</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>There will be blood</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.43</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Goodfellas</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.49</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Mulholland Drive</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.12</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Bicycle Thieves</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.59</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>City Lights</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.11</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Grand Illusion</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.42</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>The Red Shoes</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.54</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Angry Men</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.43</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Schindler's List</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.8</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Pulp Fiction</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.65</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Fight Club</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.42</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <p> Back to the Future</p>
+                </div>
+                <div class="col-md-6">
+                    <p>****4.44</p>
+                </div>
+            </div><br>
+        </div>
+    </div>
+    </div>
+   
+  
+   
